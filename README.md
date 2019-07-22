@@ -13,9 +13,7 @@ Click [here](https://www.kaggle.com/c/msk-redefining-cancer-treatment/data) to d
 
 The first part of this notebook focused on applying common techniques to preprocess and vectorize free text and evaluate its effectiveness by running them through vanilla Logistic Regression and Random Forest.<br>
 
-The techniques used, from least effective to most effective, were:
-
-<br>
+The techniques used, from least effective to most effective, were:<br>
  * Bag of Words <br> 
 * TF-IDF <br> 
 * Word2Vec <br><br>
