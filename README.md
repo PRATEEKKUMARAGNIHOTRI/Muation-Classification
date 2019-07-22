@@ -18,7 +18,7 @@ The techniques used, from least effective to most effective, were:
 <br>
  * Bag of Words <br> 
 * TF-IDF <br> 
-* Word2Vec <br>
+* Word2Vec <br><br>
 
 Because the above approaches did not take into account the temporal patterns in free text, a quick LSTM was tried as well. This approach scored higher than the above without any tuning.
 
