@@ -8,6 +8,10 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+if [-d "/usr/local/cuda-10.1/bin/"  ]; then
+    export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+fi
 
 if [ -d "/usr/local/cuda-10.1/bin/" ]; then
     export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
