@@ -1,8 +1,3 @@
-# set PATH for cuda 10.1 installation
-if [ -d "/usr/local/cuda-10.1/bin/" ]; then
-    export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
-    export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-fi
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -12,6 +7,12 @@ fi
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
+
+
+if [ -d "/usr/local/cuda-10.1/bin/" ]; then
+    export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+fi
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
